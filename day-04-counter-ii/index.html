@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter II Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; text-align: center; }
+    input, button { margin: 5px; padding: 8px; }
+    #output { margin-top: 20px; font-size: 1.2em; }
+  </style>
+</head>
+<body>
+  <h1>Counter II Demo</h1>
+  <input type="number" id="init" placeholder="Enter initial value" />
+  <button onclick="setupCounter()">Create Counter</button>
+  <div id="controls" style="display:none;">
+    <button onclick="run('increment')">Increment</button>
+    <button onclick="run('decrement')">Decrement</button>
+    <button onclick="run('reset')">Reset</button>
+  </div>
+  <div id="output"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
